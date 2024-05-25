@@ -23,7 +23,7 @@ const CourseContent = () => {
             <Nav.Link eventKey="unit1">Unidad 1</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="unit2">Unidad 2</Nav.Link>
+            <Nav.Link eventKey="unit2">Creacion de contenidos con IA</Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link eventKey="unit3">Unidad 3</Nav.Link>
