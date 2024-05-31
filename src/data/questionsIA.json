@@ -1,0 +1,27 @@
+
+{
+    "questions": [
+      {
+        "question": "¿Qué es la inteligencia artificial?",
+        "options": [
+          "Un sistema que simula la inteligencia humana",
+          "Un tipo de robot",
+          "Un programa de computadora simple",
+          "Una teoría de la física"
+        ],
+        "correctAnswer": "Un sistema que simula la inteligencia humana"
+      },
+      {
+        "question": "¿Cuál es una herramienta comúnmente usada en IA?",
+        "options": [
+          "TensorFlow",
+          "HTML",
+          "CSS",
+          "Bootstrap"
+        ],
+        "correctAnswer": "TensorFlow"
+      }
+    
+    ]
+  }
+  

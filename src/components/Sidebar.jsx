@@ -4,21 +4,23 @@ import { Nav } from 'react-bootstrap';
 
 const Sidebar = ({ onSelectCategory }) => {
   return (
-    <div className="sidebar">
-      <h5>Cursos</h5>
-      <Nav defaultActiveKey="all" className="flex-column">
-        <Nav.Link eventKey="all" onClick={() => onSelectCategory('all')}>
-          Todos los cursos
-        </Nav.Link>
-        <Nav.Link eventKey="category1" onClick={() => onSelectCategory('category1')}>
-          Categoría 1
-        </Nav.Link>
-        <Nav.Link eventKey="category2" onClick={() => onSelectCategory('category2')}>
-          Categoría 2
-        </Nav.Link>
-        {/* Agrega más categorías según sea necesario */}
-      </Nav>
-    </div>
+    <Nav variant="pills" className="flex-column">
+      <Nav.Item>
+        <Nav.Link onClick={() => onSelectCategory('all')}>Todos los cursos</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link onClick={() => onSelectCategory('Misionalidad')}>Misionalidad</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link onClick={() => onSelectCategory('Innovación y Emprendimiento')}>Innovación y Emprendimiento</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link onClick={() => onSelectCategory('Educación Digital')}>Educación Digital</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link onClick={() => onSelectCategory('Investigación')}>Investigación</Nav.Link>
+      </Nav.Item>
+    </Nav>
   );
 };
 
