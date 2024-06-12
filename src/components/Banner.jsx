@@ -1,19 +1,11 @@
-// src/components/Banner.jsx
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import BannerImage from '../assets/Portada Academia Ascendere_1.png';
+import BannerImage from '../assets/Portada Academia Ascendere_1.png'; // Asegúrate de que esta ruta sea correcta
 
 const Banner = () => {
   return (
-    <div className="banner" style={{ backgroundImage: `url(${BannerImage})` }}>
-      <Container>
-        <Row>
-          <Col className="text-center">
-            <h1></h1>
-            <p></p>
-          </Col>
-        </Row>
-      </Container>
+    <div className="banner">
+      <img src={BannerImage} alt="Banner" className="banner-image" />
+      <div className="linea-divisoria"></div> {/* Línea divisoria */}
     </div>
   );
 };

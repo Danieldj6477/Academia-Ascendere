@@ -35,6 +35,13 @@ const CourseContent = () => {
     ],
   };
 
+  const openOutlookEmail = () => {
+    const recipient = "example@example.com"; // Reemplaza con el destinatario deseado
+    const subject = "Consulta sobre el curso de IA"; // Reemplaza con el asunto deseado
+    const outlookUrl = `https://outlook.office.com/mail/deeplink/compose?to=${recipient}&subject=${encodeURIComponent(subject)}`;
+    window.open(outlookUrl, '_blank');
+  };
+
   return (
     <div className="course-content">
       <Container>
@@ -440,6 +447,7 @@ const CourseContent = () => {
 <Button as={Link} to="/test" variant="primary" className="mt-3">
       Realizar Test de Finalización
     </Button>
+    <Button onClick={openOutlookEmail} variant="Primary" className="mt-3 ml-3">Enviar Correo</Button>
 
 </div>
 
