@@ -257,3 +257,33 @@ h1, h4 {
   border-color: #0056b3;
   color: white;
 }
+
+
+
+.sidebar {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .nav-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #007bff, #007bff);
+  color: white;
+  font-weight: bold;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.sidebar .nav-link:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #0056b3, #00b0ff);
+}
+
+.sidebar .nav-link i {
+  margin-right: 10px;
+}

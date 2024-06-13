@@ -116,7 +116,11 @@ const CourseContent = () => {
     </ul>
 </div>
         <Button onClick={() => handleNext('unit2')} className="mt-3">Siguiente Unidad</Button>
+        <Button as={Link} to="/tests_1/test1" variant="primary" className="mt-3">
+                  Realizar Test de Unidad 1
+                </Button>
             </Tab.Pane>
+
 
             
             <Tab.Pane eventKey="unit2">
@@ -170,7 +174,10 @@ const CourseContent = () => {
     </ul>
 </div>
               <Button onClick={() => handleNext('unit3')} className="mt-3">Siguiente Unidad</Button>
-            </Tab.Pane>
+              <Button as={Link} to="/tests_1/test2" variant="primary" className="mt-3">
+                  Realizar Test de Unidad 2
+                </Button>
+           </Tab.Pane>
             <Tab.Pane eventKey="unit3">
               <h4>IAs para el diseño de imagen</h4>
               <div className="video-container">
@@ -240,6 +247,10 @@ const CourseContent = () => {
 </div>
 
               <Button onClick={() => handleNext('unit4')} className="mt-3">Siguiente Unidad</Button>
+              <Button as={Link} to="/tests_1/test3" variant="primary" className="mt-3">
+                  Realizar Test de Unidad 3
+                </Button>
+           
             </Tab.Pane>
             <Tab.Pane eventKey="unit4">
               <h4>IAs para presentaciones</h4>
@@ -310,6 +321,10 @@ const CourseContent = () => {
 </div>
 
               <Button onClick={() => handleNext('unit5')} className="mt-3">Siguiente Unidad</Button>
+              <Button as={Link} to="/tests_1/test4" variant="primary" className="mt-3">
+                  Realizar Test de Unidad 4
+                </Button>
+            
             </Tab.Pane>
             <Tab.Pane eventKey="unit5">
               <h4>IAs para el diseño de vídeo</h4>
@@ -388,6 +403,10 @@ const CourseContent = () => {
     </ul>
 </div>
               <Button onClick={() => handleNext('unit6')} className="mt-3">Siguiente Unidad</Button>
+              <Button as={Link} to="/tests_1/test5" variant="primary" className="mt-3">
+                  Realizar Test de Unidad 5
+                </Button>
+            
             </Tab.Pane>
             <Tab.Pane eventKey="unit6">
               <h4>IAs para audio</h4>
@@ -444,6 +463,13 @@ const CourseContent = () => {
     <li><a href="https://elevenlabs.io" target="_blank">Visita ElevenLabs</a></li>
     <li><a href="https://www.aiva.ai" target="_blank">Visita Aiva</a></li>
 </ul>
+
+<Button as={Link} to="/tests_1/test6" variant="primary" className="mt-3">
+                  Realizar Test de Unidad 6
+                </Button>
+
+
+
 <Button as={Link} to="/test" variant="primary" className="mt-3">
       Realizar Test de Finalización
     </Button>
