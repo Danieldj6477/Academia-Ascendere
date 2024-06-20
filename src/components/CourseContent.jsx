@@ -1,11 +1,21 @@
 
-import React, { useState } from 'react';
+import React, { useEffect, useState  } from 'react';
 import { Tab, Nav, Container, Row, Col, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Footer from './Footer';
 
+
+
 const CourseContent = () => {
-  const [activeKey, setActiveKey] = useState('unit1');
+  const location = useLocation();
+  const [activeKey, setActiveKey] = useState('first');
+
+  useEffect(() => {
+    if (location.state && location.state.activeTab) {
+      setActiveKey(location.state.activeTab);
+    }
+  }, [location]);
+
 
   const handleNext = (nextKey) => {
     setActiveKey(nextKey);
@@ -46,7 +56,7 @@ const CourseContent = () => {
     <div className="course-content">
       <Container>
         <h1>Creación de contenidos educativos utilizando la IA</h1>
-        <Tab.Container id="course-tabs" activeKey={activeKey}>
+        <Tab.Container id="left-tabs-example" activeKey={activeKey} onSelect={(k) => setActiveKey(k)}>
           <Nav variant="tabs" className="mb-3">
             <Nav.Item>
               <Nav.Link eventKey="unit1" onClick={(e) => e.preventDefault()}>Unidad 1</Nav.Link>
@@ -115,10 +125,8 @@ const CourseContent = () => {
         <li><strong>Transparencia y Explicabilidad:</strong> Necesidad de que los sistemas de IA sean comprensibles y sus decisiones explicables.</li>
     </ul>
 </div>
-        <Button onClick={() => handleNext('unit2')} className="mt-3">Siguiente Unidad</Button>
-        <Button as={Link} to="/tests_1/test1" variant="primary" className="mt-3">
-                  Realizar Test de Unidad 1
-                </Button>
+
+  <Button as={Link} to="/test/unit1" variant="primary" className="mt-3">Realizar Test de Unidad 1</Button>
             </Tab.Pane>
 
 
@@ -173,10 +181,7 @@ const CourseContent = () => {
         <li><a href="sandbox:/mnt/data/385146spa (1).pdf" target="_blank">Descargar Documento de la UNESCO</a></li>
     </ul>
 </div>
-              <Button onClick={() => handleNext('unit3')} className="mt-3">Siguiente Unidad</Button>
-              <Button as={Link} to="/tests_1/test2" variant="primary" className="mt-3">
-                  Realizar Test de Unidad 2
-                </Button>
+              
            </Tab.Pane>
             <Tab.Pane eventKey="unit3">
               <h4>IAs para el diseño de imagen</h4>
@@ -246,10 +251,7 @@ const CourseContent = () => {
     </ul>
 </div>
 
-              <Button onClick={() => handleNext('unit4')} className="mt-3">Siguiente Unidad</Button>
-              <Button as={Link} to="/tests_1/test3" variant="primary" className="mt-3">
-                  Realizar Test de Unidad 3
-                </Button>
+              
            
             </Tab.Pane>
             <Tab.Pane eventKey="unit4">
@@ -320,10 +322,7 @@ const CourseContent = () => {
     </ul>
 </div>
 
-              <Button onClick={() => handleNext('unit5')} className="mt-3">Siguiente Unidad</Button>
-              <Button as={Link} to="/tests_1/test4" variant="primary" className="mt-3">
-                  Realizar Test de Unidad 4
-                </Button>
+             
             
             </Tab.Pane>
             <Tab.Pane eventKey="unit5">
@@ -463,12 +462,6 @@ const CourseContent = () => {
     <li><a href="https://elevenlabs.io" target="_blank">Visita ElevenLabs</a></li>
     <li><a href="https://www.aiva.ai" target="_blank">Visita Aiva</a></li>
 </ul>
-
-<Button as={Link} to="/tests_1/test6" variant="primary" className="mt-3">
-                  Realizar Test de Unidad 6
-                </Button>
-
-
 
 <Button as={Link} to="/test" variant="primary" className="mt-3">
       Realizar Test de Finalización

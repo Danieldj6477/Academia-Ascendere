@@ -9,8 +9,12 @@ import CursoPageAITools from './pages/CursoPageAITools';
 import CursoPageSTEM from './pages/CursoPageSTEM';
 import CursoPageLeadership from './pages/CursoPageLeadership';
 import TestPage from './pages/TestPage';
+import TestUnit1 from './components/TestUnit1';
+import SatisfactionSurvey from './components/SatisfactionSurvey';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -25,6 +29,8 @@ root.render(
         <Route path="/curso/5" element={<CursoPageSTEM />} />
         <Route path="/curso/6" element={<CursoPageLeadership />} />
         <Route path="/test" element={<TestPage />} />
+        <Route path="/test/unit1" element={<TestUnit1 numberOfQuestions={5} />} />
+        <Route path="/satisfaccion" element={<SatisfactionSurvey />} />
       </Routes>
     </Router>
   </React.StrictMode>

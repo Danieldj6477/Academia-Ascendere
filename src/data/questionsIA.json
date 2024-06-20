@@ -1,27 +1,57 @@
-
 {
-    "questions": [
-      {
-        "question": "¿Qué es la inteligencia artificial?",
-        "options": [
-          "Un sistema que simula la inteligencia humana",
-          "Un tipo de robot",
-          "Un programa de computadora simple",
-          "Una teoría de la física"
-        ],
-        "correctAnswer": "Un sistema que simula la inteligencia humana"
-      },
-      {
-        "question": "¿Cuál es una herramienta comúnmente usada en IA?",
-        "options": [
-          "TensorFlow",
-          "HTML",
-          "CSS",
-          "Bootstrap"
-        ],
-        "correctAnswer": "TensorFlow"
-      }
-    
-    ]
-  }
+  "unit1": [
+    {
+      "question": "¿Qué es la inteligencia artificial?",
+      "options": [
+        "Un sistema que imita la inteligencia humana",
+        "Un robot humanoide",
+        "Una máquina que realiza cálculos matemáticos",
+        "Una tecnología utilizada solo en videojuegos"
+      ],
+      "correctAnswer": "Un sistema que imita la inteligencia humana"
+    },
+    {
+      "question": "¿Cuál es una aplicación común de la inteligencia artificial en la vida diaria?",
+      "options": [
+        "Predicción del clima",
+        "Cálculo de impuestos",
+        "Recomendaciones de películas y series",
+        "Construcción de puentes"
+      ],
+      "correctAnswer": "Recomendaciones de películas y series"
+    },
+    {
+      "question": "¿Qué técnica se utiliza en la inteligencia artificial para aprender de grandes cantidades de datos?",
+      "options": [
+        "Programación estructurada",
+        "Aprendizaje automático",
+        "Redes de comunicación",
+        "Ingeniería de software"
+      ],
+      "correctAnswer": "Aprendizaje automático"
+    },
+    {
+      "question": "¿Cuál de las siguientes es una subárea de la inteligencia artificial que se centra en la creación de agentes que pueden jugar juegos de estrategia?",
+      "options": [
+        "Visión por computadora",
+        "Procesamiento del lenguaje natural",
+        "Robótica",
+        "Sistemas de juego"
+      ],
+      "correctAnswer": "Sistemas de juego"
+    },
+    {
+      "question": "¿Qué es una red neuronal en el contexto de la inteligencia artificial?",
+      "options": [
+        "Una red de computadoras conectadas",
+        "Un modelo de aprendizaje inspirado en el cerebro humano",
+        "Un software para la gestión de redes sociales",
+        "Un sistema de seguridad para proteger datos"
+      ],
+      "correctAnswer": "Un modelo de aprendizaje inspirado en el cerebro humano"
+    }
+  ]
+}
+
+ 
   
